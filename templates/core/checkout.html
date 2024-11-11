@@ -78,7 +78,7 @@
                         </div>
                     </div>
 
-                    <button type="button" class="btn w-100" id="checkout-button" style="background-color: blueviolet;">Pay With Stripe (Credit or Debit Card)</button>
+                    <button type="button" class="btn w-100" id="checkout-button" style="background-color: blueviolet;">Pay With M-Pesa</button>
                     <div id="paypal-button-container" class="mt-3"></div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
             .render("#paypal-button-container");
     </script>
 
-    <script>
+    <!--<script>
         var stripe = Stripe("{{stripe_publishable_key}}");
         var checkoutButton = document.getElementById("checkout-button");
 
@@ -152,7 +152,7 @@
         } catch (error) {
             console.log(error);
         }
-    </script>
+    </script> -->
 
 
 {% endblock content %}
